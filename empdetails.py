@@ -1,16 +1,10 @@
 import sys
 
-if len(sys.argv) != 5:
-    print("Usage: python employee.py <emp_id> <emp_name> <emp_salary> <emp_exp>")
-    sys.exit()
+script_name=sys.argv[0]
 
-emp_id = sys.argv[1]
-emp_name = sys.argv[2]
-emp_salary = sys.argv[3]
-emp_exp = sys.argv[4]
+name=sys.argv[1]
+id=sys.argv[2]
+salary= sys.argv[3]
+exp=sys.argv[4]
 
-print("\n--- Employee Details ---")
-print("ID:", emp_id)
-print("Name:", emp_name)
-print("Salary:", emp_salary)
-print("Experience:", emp_exp, "years")
+print(f"script name: {script_name}\nName:{name}\nId:{id}\nSalary:{salary}\nExperience:{exp}")
